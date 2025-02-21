@@ -30,7 +30,7 @@ volumes:
       - ./volumes/sandbox/conf:/conf
       - ./volumes/app/storage:/var/sandbox/sandbox-python/usr/local/storage
 ```
-3. 修改后 docker compose down,docker compose build,docker compose up。拉不到镜像，无法安装包等问题请自习挂代理等方式解决
+3. 修改后分别执行 docker compose down、docker compose build、docker compose up。拉不到镜像，无法安装包等问题请自习挂代理等方式解决
 #### 导入 仓库中 demo-upload.yml工作流进行测试
 返回示例,result 为文件大小，url 为存储于 dify-api中的图片路径，在
 ```
