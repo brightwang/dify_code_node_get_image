@@ -7,9 +7,6 @@
 source_url = '/app/api/storage/' + file_key if not source_url else source_url
 # save file to storage
 storage.save(file_key, content)
-# 修改文件权限
-import os
-os.chmod(source_url, 0o777)
 ```
 #### 修改沙盒配置
 1. 修改 docker/volumes/sandbox/conf/config.yaml
