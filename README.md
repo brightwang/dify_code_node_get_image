@@ -1,6 +1,13 @@
 # dify_code_node_get_image
 如何让 dify工作流的 code 节点拿到图片的信息
 本仓库为AI带路党Pro视频准备
+#### 修改api源码
+1. api/services/file_service.py 中 FileService类upload_file函数中,
+```
+source_url = '/app/api/storage/' + file_key if not source_url else source_url
+# save file to storage
+storage.save(file_key, content)
+```
 #### 修改沙盒配置
 1. 修改 docker/volumes/sandbox/conf/config.yaml
   ```
