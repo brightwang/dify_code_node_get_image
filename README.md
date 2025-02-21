@@ -18,11 +18,11 @@ os.chmod(source_url, 0o777)
    ```
 #### 修改 docker-compose.yaml
 1. api节点修改不用 image而是通过 build（为什么请参考 up 主往期视频）
-   ```
+```
 api:
     build: ../api
     restart: always
-   ```
+```
 2. 修改 sandbox 节点中的volumes
 ```
 volumes:
