@@ -2,6 +2,8 @@
 如何让 dify工作流的 code 节点拿到图片的信息
 本仓库为AI带路党Pro视频准备[如何在dify的code节点中访问图片文件-dify二次开发
 ](https://www.bilibili.com/video/BV1BRPNeLEDv/?vd_source=e60241d08fb6eeea3c6a0e9196f65bc0)
+#### clone源码
+clone源码，并git checkout 0.15.3，避免使用 main 分支代码进行build，因为 main 分支不稳定
 #### 修改api源码
 1. api/services/file_service.py 中 FileService类upload_file函数中,在storage.save之前新增代码
 ```
